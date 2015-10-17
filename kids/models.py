@@ -12,7 +12,7 @@ class Kindergarten(models.Model):
     capacity = models.IntegerField(default=0) 
         
     def __unicode__(self):       
-        output = "\n\t%s \n\t%s =\n\t%s \n\t%s \n" % (self.name_string(), 
+        output = "\n\t%s \n\t%s \n\t%s \n\t%s \n" % (self.name_string(), 
                                                     self.phone_number_string(),
                                                     self.complete_address(),
                                                     self.capacity_string())
